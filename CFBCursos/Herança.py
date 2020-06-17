@@ -14,6 +14,7 @@ class NPC:
         print("munição:." + str(self.municao))
         print("Vivo:...." + ("Sim" if self.vivo else "Não"))
         print("Energia:." + str(self.energia))
+        print("-------------------------------------------")
 
 
 class Soldado(NPC):
@@ -44,3 +45,18 @@ class Elite(NPC):
 
     def inf(self):
         super(Elite, self).info()
+
+
+s1 = Soldado("Olho Vivo", 1)
+s2 = Guarda("Bala na Agulha", 1)
+s3 = Elite("Ninja", 1)
+s4 = Soldado("Super Atento", 2)
+s5 = Guarda("Tiro Certo", 2)
+s6 = Elite("Samurei", 2)
+
+s1.info()
+s2.info()
+s3.info()
+s4.info()
+s5.info()
+s6.info()
