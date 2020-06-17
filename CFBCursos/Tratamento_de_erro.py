@@ -12,3 +12,16 @@ finally:
     # Independente se deu erro ou não, o bloco finally
     # será execultado.
     print("Fim do tratamento")
+
+
+num = -10
+if num < 1:
+    raise Exception("Valor não permitido")
+    # Gerando um erro com o comando raise Exception
+
+num = "Bruno"
+
+if not type(num) is int:
+    raise Exception("Somente números permitidos")
+else:
+    print(num)
