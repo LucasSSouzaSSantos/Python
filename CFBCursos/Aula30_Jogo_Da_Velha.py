@@ -25,5 +25,25 @@ def tela():
     print("Jogadas: " + Fore.GREEN + str(jogadas) + Fore.RESET)
 
 
+def jogadorJoga():
+    global jogadas
+    global quemJoga
+    global vit
+    global maxJogadas
+    if quemJoga == 2 and jogadas < maxJogadas:
+        linha = int(input("linha: "))
+        coluna = int(input("coluna: "))
+        try:
+            while velha[linha][coluna] != " ":
+                linha = int(input("linha: "))
+                coluna = int(input("coluna: "))
+            velha[linha][coluna] = "X"
+            quemJoga = 1
+            jogadas += 1
+        except:
+            print("Linha ou coluna invalida")
+            # vit = "n"
+
+
 while True:
     tela()
