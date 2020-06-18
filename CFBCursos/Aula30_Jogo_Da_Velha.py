@@ -44,13 +44,11 @@ def jogadorJoga():
             jogadas += 1
         except:
             print("Linha ou coluna invalida")
-            # vit = "n"
 
 
 def cpuJoga():
     global jogadas
     global quemJoga
-    global vit
     global maxJogadas
     if quemJoga == 1 and jogadas < maxJogadas:
         linha = random.randrange(0, 3)
@@ -65,6 +63,9 @@ def cpuJoga():
 
 def verificarVitoria():
     global velha
+    global quemJoga
+    global jogadas
+    global maxJogadas
     vitoria = "n"
     simbolos = ["X", "O"]
     for s in simbolos:
@@ -85,6 +86,7 @@ def verificarVitoria():
             indice_linha += 1
             if vitoria != "n":
                 break
+            # chegou aqui!!!!!!!!
 
         # verificar coluna
         indice_linha = 0
@@ -126,7 +128,7 @@ def verificarVitoria():
             if soma == 3:
                 vitoria = s
                 break
-        return vitoria
+    return vitoria
 
 
 def redefinir():
@@ -148,8 +150,12 @@ def redefinir():
 while True:
     tela()
     jogadorJoga()
-    cpuJoga()
     tela()
+    cpuJoga()
+    print("1")
+    tela()
+    print("2")
     vit = verificarVitoria()
+    print("3")
     if vit != "n" or jogadas >= maxJogadas:
         break
