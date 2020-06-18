@@ -31,9 +31,9 @@ def jogadorJoga():
     global vit
     global maxJogadas
     if quemJoga == 2 and jogadas < maxJogadas:
-        linha = int(input("linha: "))
-        coluna = int(input("coluna: "))
         try:
+            linha = int(input("linha: "))
+            coluna = int(input("coluna: "))
             while velha[linha][coluna] != " ":
                 linha = int(input("linha: "))
                 coluna = int(input("coluna: "))
@@ -58,6 +58,7 @@ def cpuJoga():
             coluna = random.randint(0, 2)
         velha[linha][coluna] = "O"
         quemJoga = 2
+        jogadas += 1
 
 
 while True:
