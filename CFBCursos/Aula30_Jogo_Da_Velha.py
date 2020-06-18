@@ -146,7 +146,6 @@ while True:
     tela()
     jogadorJoga()
     cpuJoga()
-    print("1")
     tela()
     vit = verificarVitoria()
     if vit != "n" or jogadas >= maxJogadas:
