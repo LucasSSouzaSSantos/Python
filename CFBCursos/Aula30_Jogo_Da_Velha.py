@@ -1,6 +1,6 @@
 import os
 import random
-from colorama import Fore
+from colorama import Fore, Back, Style
 
 jogarNovamente = "s"
 jogadas = 0
@@ -15,8 +15,6 @@ velha = [[" ", " ", " "],
 def tela():
     global velha
     global jogadas
-    global quemJoga
-    global maxJogadas
     os.system("clear")
     print("    0   1   2")
     print("0:  " + " | " + velha[0][0] + " | " + velha[0][1] + " | " + velha[0][2])
@@ -30,7 +28,6 @@ def tela():
 def jogadorJoga():
     global jogadas
     global quemJoga
-    global vit
     global maxJogadas
     if quemJoga == 2 and jogadas < maxJogadas:
         try:
@@ -44,6 +41,7 @@ def jogadorJoga():
             jogadas += 1
         except:
             print("Linha ou coluna invalida")
+            input("Digite enter para continuar")
 
 
 def cpuJoga():
@@ -63,9 +61,6 @@ def cpuJoga():
 
 def verificarVitoria():
     global velha
-    global quemJoga
-    global jogadas
-    global maxJogadas
     vitoria = "n"
     simbolos = ["X", "O"]
     for s in simbolos:
@@ -108,7 +103,7 @@ def verificarVitoria():
             # verifica diagonal 1
             soma = 0
             indice_diagonal_1 = 0
-            while indice_diagonal_1:
+            while indice_diagonal_1 < 3:
                 if velha[indice_diagonal_1][indice_diagonal_1] == s:
                     soma += 1
                 indice_diagonal_1 += 1
