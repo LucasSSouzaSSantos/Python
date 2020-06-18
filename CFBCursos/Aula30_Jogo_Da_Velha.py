@@ -67,13 +67,64 @@ def verificarVitoria():
     simbolos = ["X", "O"]
     for s in simbolos:
         vitoria = "n"
+        # verificar linha
         indice_linha = 0
         indice_coluna = 0
         while indice_linha < 3:
             soma = 0
             indice_coluna = 0
             while indice_coluna < 3:
-                
+                if velha[indice_linha][indice_coluna] == s:
+                    soma += 1
+                indice_coluna += 1
+            if soma == 3:
+                vitoria = s
+                break
+            indice_linha += 1
+            if vitoria != "n":
+                break
+
+        # verificar coluna
+        indice_linha = 0
+        indice_coluna = 0
+        while indice_coluna < 3:
+            soma = 0
+            indice_linha = 0
+            while indice_linha < 3:
+                if velha[indice_linha][indice_coluna] == s:
+                    soma += 1
+                indice_linha += 1
+            if soma == 3:
+                vitoria = s
+                break
+            indice_coluna += 1
+            if vitoria != "n":
+                break
+
+            # verifica diagonal 1
+            soma = 0
+            indice_diagonal_1 = 0
+            while indice_diagonal_1:
+                if velha[indice_diagonal_1][indice_diagonal_1] == s:
+                    soma += 1
+                indice_diagonal_1 += 1
+            if soma == 3:
+                vitoria = s
+                break
+
+            # verifica diagonal 2
+            soma = 0
+            indice_diagonal_linha = 0
+            indice_diagonal_coluna = 2
+            while indice_diagonal_coluna < 3:
+                if velha[indice_diagonal_linha][indice_diagonal_coluna] == s:
+                    soma += 1
+                indice_diagonal_coluna += 1
+                indice_diagonal_coluna -= 1
+            if soma == 3:
+                vitoria = s
+                break
+        return vitoria
 
 
 while True:
