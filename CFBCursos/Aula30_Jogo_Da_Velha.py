@@ -15,6 +15,8 @@ velha = [[" ", " ", " "],
 def tela():
     global velha
     global jogadas
+    global quemJoga
+    global maxJogadas
     os.system("clear")
     print("    0   1   2")
     print("0:  " + " | " + velha[0][0] + " | " + velha[0][1] + " | " + velha[0][2])
@@ -51,18 +53,18 @@ def cpuJoga():
     global vit
     global maxJogadas
     if quemJoga == 1 and jogadas < maxJogadas:
-        linha = random.randint(0, 2)
-        coluna = random.randint(0, 2)
+        linha = random.randrange(0, 3)
+        coluna = random.randrange(0, 3)
         while velha[linha][coluna] != " ":
-            linha = random.randint(0, 2)
-            coluna = random.randint(0, 2)
+            linha = random.randrange(0, 3)
+            coluna = random.randrange(0, 3)
         velha[linha][coluna] = "O"
         quemJoga = 2
         jogadas += 1
 
 
 def verificarVitoria():
-    global  velha
+    global velha
     vitoria = "n"
     simbolos = ["X", "O"]
     for s in simbolos:
@@ -116,7 +118,7 @@ def verificarVitoria():
             soma = 0
             indice_diagonal_linha = 0
             indice_diagonal_coluna = 2
-            while indice_diagonal_coluna < 3:
+            while indice_diagonal_coluna >= 0:
                 if velha[indice_diagonal_linha][indice_diagonal_coluna] == s:
                     soma += 1
                 indice_diagonal_coluna += 1
@@ -127,7 +129,27 @@ def verificarVitoria():
         return vitoria
 
 
+def redefinir():
+    global velha
+    global jogadas
+    global quemJoga
+    global maxJogadas
+    global vit
+    jogarNovamente = "s"
+    jogadas = 0
+    quemJoga = 2
+    maxJogadas = 9
+    vit = "n"
+    velha = [[" ", " ", " "],
+             [" ", " ", " "],
+             [" ", " ", " "]]
+
+
 while True:
     tela()
     jogadorJoga()
     cpuJoga()
+    tela()
+    vit = verificarVitoria()
+    if vit != "n" or jogadas >= maxJogadas:
+        break
