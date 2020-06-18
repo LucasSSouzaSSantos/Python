@@ -145,12 +145,9 @@ def redefinir():
 while True:
     tela()
     jogadorJoga()
-    tela()
     cpuJoga()
     print("1")
     tela()
-    print("2")
     vit = verificarVitoria()
-    print("3")
     if vit != "n" or jogadas >= maxJogadas:
         break
