@@ -61,6 +61,21 @@ def cpuJoga():
         jogadas += 1
 
 
+def verificarVitoria():
+    global  velha
+    vitoria = "n"
+    simbolos = ["X", "O"]
+    for s in simbolos:
+        vitoria = "n"
+        indice_linha = 0
+        indice_coluna = 0
+        while indice_linha < 3:
+            soma = 0
+            indice_coluna = 0
+            while indice_coluna < 3:
+                
+
+
 while True:
     tela()
     jogadorJoga()
