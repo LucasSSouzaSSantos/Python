@@ -18,4 +18,6 @@
         <p>Transformando um dicionário python em um arquivo um objeto JSON</p>
     <h2>Aula 37 JSON Parte2: </h2>
         <p>Transformando coleções do Python em objetos JSON</p>
+     <h2>Aula 38 JSON Parte3: </h2>
+        <p></p>   
     </section>
