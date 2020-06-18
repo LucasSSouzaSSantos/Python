@@ -1,7 +1,15 @@
 import json
 
-carros_json = '{"marca":"honda","modelo":"HRV" "cor":"prata"}'
+# Tranformando um json em um dicionário python
+carros_json = '{"marca":"honda","modelo":"HRV", "cor":"prata"}'
 
-carros = json.loads(carros_json)  # Ele vai carregar e transformar todo esse json em uma string
+carros = json.loads(carros_json)
+print("JSON -> Python: ", carros)
 
-print(carros)
+# Transformando um dicionário python em um json
+casa = {"Produto": "agua Mineral",
+        "Marca": "Santa Joana",
+        "Quantidade": 500
+        }
+casa_json = json.dumps(casa)
+print("Python -> JSON: ", casa_json)
