@@ -45,5 +45,22 @@ def jogadorJoga():
             # vit = "n"
 
 
+def cpuJoga():
+    global jogadas
+    global quemJoga
+    global vit
+    global maxJogadas
+    if quemJoga == 1 and jogadas < maxJogadas:
+        linha = random.randint(0, 2)
+        coluna = random.randint(0, 2)
+        while velha[linha][coluna] != " ":
+            linha = random.randint(0, 2)
+            coluna = random.randint(0, 2)
+        velha[linha][coluna] = "O"
+        quemJoga = 2
+
+
 while True:
     tela()
+    jogadorJoga()
+    cpuJoga()
