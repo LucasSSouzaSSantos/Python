@@ -1,5 +1,8 @@
+<header>
 # Python
 <h1>Curso de Python do Canal CFB Cursos</h1>
+</header>
+    <section>    
     <h2>Aula 34:</h2>
         <p>Essa aula fala sobre módulos externos e como importa-los para nossa 
            arquivo trabalho.</p>
@@ -12,4 +15,4 @@
         <p>Trabalhando com JSON no python. Transformando arquivo json em dicionário python para 
         usar os comando visto nas aulas de dicionŕio para manipular os arquivos.</p>
         <p>Transformando um dicionário python em um arquivo um objeto JSON</p>
-    
+    </section>
