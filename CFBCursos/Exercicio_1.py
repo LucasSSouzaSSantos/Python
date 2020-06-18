@@ -1,5 +1,5 @@
 import os
-carro = []
+carros = []
 
 
 class Carro:
@@ -36,7 +36,7 @@ def Menu():
     print("5 - Desligar Carro")
     print("6 - Listar Carro")
     print("7 - Sair")
-    print("Quantidade de carros " + str(len(carros)))
+    print("Quantidade de carros: " + str(len(carros)))
     opc = input("Digite um opção: ")
     return opc
 
@@ -47,53 +47,72 @@ def NovoCarro():
     car = Carro(n, p)
     carros.append(car)
     print("Novo carro")
-    os.system("pause")
+    input("Digite enter para continuar!")
 
 
 def informacoes():
     os.system("clear") or None
     n = input("Informe o número do carro que deseja ver as informações: ")
     try:
-        carros[int(n)].info()
+        carros[int(n) - 1].info()
     except:
         print("Esse Carro não existe")
-    os.system("pause")
+    input("Digite enter para continuar!")
 
 def excluirCarro():
     os.system("clear") or None
     n = input("Informe o número do carro que deseja ver as informações: ")
     try:
-        del carros[int(n)]
+        del carros[int(n) - 1]
     except:
         print("Esse Carro não existe")
-    os.system("pause")
+    input("Digite enter para continuar!")
 
 def ligarCarro():
     os.system("clear") or None
     n = input("Informe o número do carro que deseja ligar: ")
     try:
-        carros[int(n)].ligar()
+        carros[int(n) - 1].ligar()
         print("Carro Ligado")
     except:
         print("Esse Carro não existe")
-    os.system("pause")
+    input("Digite enter para continuar!")
 
 
 def desligarCarro():
     os.system("clear") or None
     n = input("Informe o número do carro que deseja desligar: ")
     try:
-        carros[int(n)].desligar()
+        carros[int(n) - 1].desligar()
         print("Carro desligado")
     except:
         print("Esse Carro não existe")
-    os.system("pause")
-
+    input("Digite enter para continuar!")
 
 def listarCarros():
     os.system("clear") or None
     p = 0
     for c in carros:
-        print(str(p) + "-" + c.nome)
         p = p + 1
-    os.system("pause")
+        print(str(p) + "-" + c.nome)
+        
+    input("Digite enter para continuar!")
+
+ret = Menu()
+while ret < "7":
+    if ret == "1":
+        NovoCarro()
+    elif ret == "2":
+        informacoes()
+    elif ret == "3":
+        excluirCarro()
+    elif ret == "4":
+        ligarCarro()
+    elif ret == "5":
+        desligarCarro()
+    elif ret == "6":
+        listarCarros()
+    ret = Menu()
+
+os.system("clear")
+print("Programa finalizado")
