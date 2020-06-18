@@ -1,6 +1,6 @@
 import os
 import random
-from colorama import Fore, Back, Style
+from colorama import Fore
 
 jogarNovamente = "s"
 jogadas = 0
