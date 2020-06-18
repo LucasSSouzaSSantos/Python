@@ -11,3 +11,5 @@ Curso de Python do Canal CFB Cursos
     Aula 35:
         Trabalhando com datas em python usando o
         módulo datetime.
+    Aula 36 Parte 1:
+        Trabalhando com JSON no python
