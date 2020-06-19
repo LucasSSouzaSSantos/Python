@@ -39,7 +39,7 @@ nascimento = driver.find_element_by_name("fNascimento")
 nascimento.clear()
 nascimento.send_keys("21/02/1992", Keys.ARROW_DOWN)
 
-enviar = driver.find_element_by_name("Enviar")
+enviar = driver.find_element_by_name("fenviar")
 enviar.click()
 
 sleep(4)
