@@ -11,12 +11,12 @@ assert "Google" in driver.title
 # a palavra "Google"
 elem = driver.find_element_by_name("q")
 
+# em seguida, estamos enviando teclas, mas é preciso limpar qualquer
+# texto para não afetar o resultado.
 elem.clear()
-
-elem.send_keys("bolsa de valores")
-
+elem.send_keys("pycon")
 elem.send_keys(Keys.RETURN)
 
-assert "No results found." not in driver.page_source
 
+assert "No results found." not in driver.page_source
 driver.close()
