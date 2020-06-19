@@ -7,9 +7,9 @@ driver.get("file:///home/lucas/Documentos/GitHub/HTML5-Aulas/_Segundo_Site/conta
 # os comando acima acessa a página inicial do google chrome
 
 # 3.1 Interagindo com a página
-nome = driver.find_element_by_name("fnome")
-nome.clear()
-nome.send_keys("Fernando", Keys.ARROW_DOWN)
+# nome = driver.find_element_by_name("fnome")
+nome = driver.find_element_by_xpath("//input[@name='fnome']")
+nome.send_keys("Fernando")
 
 telefone = driver.find_element_by_name("ffone")
 telefone.clear()
@@ -39,7 +39,7 @@ nascimento = driver.find_element_by_name("fNascimento")
 nascimento.clear()
 nascimento.send_keys("21/02/1992", Keys.ARROW_DOWN)
 
-enviar = driver.find_element_by_name("fenviar")
+enviar = driver.find_element_by_xpath("//input[@name='fenviar']")
 enviar.click()
 
 sleep(4)
