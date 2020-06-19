@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 driver = webdriver.Chrome(executable_path='./chromedriver')
-driver.get("file:///home/lucas/Documentos/GitHub/HTML5-Aulas/_Segundo_Site/contato.html")
+driver.get("url do site")
 # os comando acima acessa a página inicial do google chrome
 
 # 3.1 Interagindo com a página
