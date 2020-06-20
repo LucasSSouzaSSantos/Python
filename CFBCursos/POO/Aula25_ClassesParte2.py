@@ -12,7 +12,6 @@ class Carro:
         self.ligado = li
         self.cor = c
 
-
     def ligar(self):
         self.ligado = "Sim"
 
