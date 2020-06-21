@@ -1,0 +1,31 @@
+Criar atalho no launcher do ubuntu (criando arquivo .desktop)
+Para isso basta criar uma arquivo com o nome do aplicativo com a extenção .desktop no diretório /usr/share/applications.
+
+Crie um arquivo myapp.desktop.
+
+
+cd /usr/share/applications
+sudo touch myapp.desktop
+
+
+agora abra o arquivo com seu editor favorito, nesse exemplo vou utilizar o vim, mas você pode utilizar qualquer outro como o nano por exemplo.
+
+
+sudo vim myapp.desktop
+
+
+E cole o seguinte conteúdo, substituindo pelos valores do seu aplicativo
+
+
+[Desktop Entry]
+Version=1.0
+Name=NomeDoMeuApp
+Comment=AlgumComentarioSobreOApp
+Exec=caminhoDoExecutavel
+Icon=IconeDoApp
+Terminal=false
+Type=Application
+Categories=Utility;Development;
+
+
+salve e pronto, está configurado e agora você pode procurar seu aplicativo no launcher do seu linux
