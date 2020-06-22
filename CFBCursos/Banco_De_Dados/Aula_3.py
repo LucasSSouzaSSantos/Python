@@ -19,7 +19,8 @@ nome = input("Digite o nome: ")
 telefone = input("Digite o telefone: ")
 email = input("Digite o email: ")
 
-vsql = """INSERT INTO tb_contatos (T_NOMECONTATO, T_TELEFONECONTATO, T_EMAILCONTATO)values('"+nome+"','"+telefone+"','"+email+"');"""
+vsql = "insert into tb_contatos (T_NomeContato, T_TelefoneContato, T_EmailContato) values ('"+nome+"','"+telefone+"','"+email+"')"
+
 
 def inserir(conexao, sql):
     try:
@@ -27,7 +28,7 @@ def inserir(conexao, sql):
         c.execute(sql)
         print("Dados inseridos com sucesso!")
         conexao.commit()
-    except Erro as ex:
+    except Error as ex:
         print(ex)
 
 inserir(vcon, vsql)
