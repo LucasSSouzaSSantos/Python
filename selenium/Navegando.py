@@ -19,8 +19,6 @@ all_options = lement.find_elements_by_tag_name("option")
 for option in all_options:
     print("Value is: %s" % option.get_atribute("value"))
     option.click()
-
-
 """
 
 driver = webdriver.Chrome(executable_path='./chromedriver')
