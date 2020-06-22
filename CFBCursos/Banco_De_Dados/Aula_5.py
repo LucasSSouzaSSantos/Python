@@ -39,10 +39,10 @@ def atualizar(conexao, sql):
         conexao.commit()
     except Error as ex:
         print(ex)
-    finally:
+    else:
         print("Registro finalizado")
 
-vsql = "UPDATE tb_contatos t_NomeContato='Bruno' where n_IdContatos=1"
+vsql = "UPDATE tb_contatos set t_NomeContato='Marcos' where n_IdContatos=2"
 atualizar(vcon, vsql)
 
 
