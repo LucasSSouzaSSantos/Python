@@ -15,9 +15,34 @@ def ConexaoBanco():
 
 vcon = ConexaoBanco()
 
+# nome = input("Digite o nome: ")
+# telefone = input("Digite o telefone: ")
+# email = input("Digite o email: ")
 
+# vsql = "insert into tb_contatos (T_NomeContato, T_TelefoneContato, T_EmailContato) values ('"+nome+"','"+telefone+"','"+email+"')"
 
+# def inserir(conexao, sql):
+#    try:
+#        c = conexao.cursor()
+#        c.execute(sql)
+#        print("Dados inseridos com sucesso!")
+#        conexao.commit()
+#    except Error as ex:
+#        print(ex)
 
+# inserir(vcon, vsql)
 
+def atualizar(conexao, sql):
+    try:
+        c = conexao.cursor()
+        c.execute(sql)
+        conexao.commit()
+    except Error as ex:
+        print(ex)
+    finally:
+        print("Registro finalizado")
+
+vsql = "UPDATE tb_contatos t_NomeContato='Bruno' where n_IdContatos=1"
+atualizar(vcon, vsql)
 
 
