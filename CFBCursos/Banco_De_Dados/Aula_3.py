@@ -1,4 +1,3 @@
-
 import sqlite3
 from sqlite3 import Error
 
@@ -9,16 +8,23 @@ def ConexaoBanco():
     con=None
     try:
         con=sqlite3.connect(caminho)
+        print("Conexão Com Sucesso!")
     except Error as ex:
         print(ex)
     return con
 
 vcon = ConexaoBanco()
 
+vsql = """INSERT INTO tb_contatos (T_NOMECONTATO, T_TELEFONECONTATO, T_EMAILCONTATO)
+values ('teste_nome','teste_telefone', 'teste_email');"""
+
 def inserir(conexao, sql):
     try:
         c = conexao.cursor()
-        c = execute(sql)
+        c.execute(sql)
+        print("Dados inseridos com sucesso!")
         # conexao.commit()
     except Erro as ex:
         print(ex)
+
+inserir(vcon, vsql)
