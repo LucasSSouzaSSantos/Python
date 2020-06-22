@@ -21,6 +21,10 @@ email = input("Digite o email: ")
 
 vsql = "insert into tb_contatos (T_NomeContato, T_TelefoneContato, T_EmailContato) values ('"+nome+"','"+telefone+"','"+email+"')"
 
+# Datelhe importante quando for inserir o código:
+# É importante passar o código acima de maneira completa, caso contrário irá um erro. Pq na tabela
+# tem 4 quantos, mas só passado 3. Para não ter esse problema é melhor mapear os campos para aonde
+# cada variável estar indo.
 
 def inserir(conexao, sql):
     try:
