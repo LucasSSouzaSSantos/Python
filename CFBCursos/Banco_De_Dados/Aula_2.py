@@ -14,5 +14,11 @@ def ConexaoBanco():
 
 vcon = ConexaoBanco()
 
-
+def inserir(conexao, sql):
+    try:
+        c = conexao.cursor()
+        c = execute(sql)
+        # conexao.commit()
+    except Erro as ex:
+        print(ex)
 
