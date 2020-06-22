@@ -2,6 +2,27 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
+"""
+Ter cuidado com o xpath no webdriver. Pois somente
+o primeiro será retornado. Se nada puder ser 
+encontrado, um NoSuchElementtException será gerado.
+
+eu tenho um elemento. O que eu posso fazer com isso?
+Inserir um texto em um campo de texto:
+
+element.send_keys("some text")
+
+3.2 Preenchendo Formulários
+
+element = driver.find_element_by_xpath("//select[@name='name']")
+all_options = lement.find_elements_by_tag_name("option")
+for option in all_options:
+    print("Value is: %s" % option.get_atribute("value"))
+    option.click()
+
+
+"""
+
 driver = webdriver.Chrome(executable_path='./chromedriver')
 driver.get("url da página")
 # os comando acima acessa a página inicial do google chrome
