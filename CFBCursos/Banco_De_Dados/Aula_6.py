@@ -1,17 +1,20 @@
 import sqlite3
 from sqlite3 import Error
 
+
 # Criar Conexão com  o banco de dados usando a função
-################ Criar Conexão ######################
+
+
 def ConexaoBanco():
     caminho = "//home//lucas//Documentos//GitHub//Python//CFBCursos//Banco_De_Dados//Agenda.db"
-    con=None
+    con = None
     try:
-        con=sqlite3.connect(caminho)
+        con = sqlite3.connect(caminho)
         print("Conexão Com Sucesso!")
     except Error as ex:
         print(ex)
     return con
+
 
 vcon = ConexaoBanco()
 
@@ -19,7 +22,8 @@ vcon = ConexaoBanco()
 # telefone = input("Digite o telefone: ")
 # email = input("Digite o email: ")
 
-# vsql = "insert into tb_contatos (T_NomeContato, T_TelefoneContato, T_EmailContato) values ('"+nome+"','"+telefone+"','"+email+"')"
+# vsql = "insert into tb_contatos (T_NomeContato, T_TelefoneContato, T_EmailContato) values
+# ('"+nome+"','"+telefone+"','"+email+"')"
 
 # def inserir(conexao, sql):
 #    try:
@@ -45,15 +49,17 @@ vcon = ConexaoBanco()
 # vsql = "UPDATE tb_contatos set t_NomeContato='Marcos' where n_IdContatos=2"
 # atualizar(vcon, vsql)
 
+
 def consulta(conexao, sql):
     c = conexao.cursor()
     c.execute(sql)
     resultado = c.fetchall()
     return resultado
 
+
 vsql = "SELECT * FROM tb_contatos"
 res = consulta(vcon, vsql)
+print("+" + 70 * "-" + "+")
 for r in res:
-    for x in r:
-        print(x)
-    print("======================")
+    print("| " + f"{r}".ljust(69, " ") + "|")
+    print("+" + 70 * "-" + "+")
