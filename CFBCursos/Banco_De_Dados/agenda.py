@@ -1,8 +1,7 @@
-from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuPrincipal, menuAtualizar, menuInserir, ConexaoBanco
+from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuPrincipal, menuAtualizar, menuInserir, fecharConexao
 from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuConsultarId, menuConsultarNomes, menuDeletar
 
-vcon = ConexaoBanco()
-opc = 0
+
 while True:
     menuPrincipal()
     opc = int(input("Digite uma opção: "))
