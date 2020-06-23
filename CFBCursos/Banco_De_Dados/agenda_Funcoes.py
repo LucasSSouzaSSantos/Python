@@ -2,7 +2,7 @@ import sqlite3
 from sqlite3 import Error
 
 
-def ConexaoBanco():
+def abrirConexao():
     caminho = "//home//lucas//Documentos//GitHub//Python//CFBCursos//Banco_De_Dados//Agenda.db"
     con = None
     try:
@@ -30,13 +30,13 @@ def menuPrincipal():
 def query(conexao, sql):
     try:
         c = conexao.cursor()
+        print("Objeto: ", c)
         conexao.execute(sql)
         conexao.commit()
     except Error as ex:
         print(ex)
     else:
         print("OK")
-        # conexao.close()
 
 
 def consultar(conexao, sql):
@@ -59,10 +59,8 @@ def menuConsultarNomes():
 
 
 def menuDeletar():
-    print()
-
-
-vcon = ConexaoBanco()
+    vid = input("Digite o ID do registro a ser deletado: ")
+    vsql = "DELETE tb_contatos WHERE"
 
 
 def menuInserir():
@@ -71,6 +69,5 @@ def menuInserir():
     vemail = input("Digite o email: ")
     vsql = "INSERT INTO tb_contatos (t_NomeContato, t_TelefoneContato, t_EmailContato)" \
            " VALUES ('"+vnome+"','"+vtelefone+"','"+vemail+"')"
-    query(vcon, vsql)
-    fecharConexao(vcon)
-
+    query(abrirConexao(), vsql)
+    abrirConexao().close()
