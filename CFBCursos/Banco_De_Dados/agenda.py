@@ -3,7 +3,9 @@ from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuConsultar, menuConsultar
 
 
 while True:
+    print(15 * "-=-")
     menuPrincipal()
+    print(15 * "-=-")
     opc = int(input("Digite uma opção: "))
     if opc == 1:
         menuInserir()
@@ -20,3 +22,4 @@ while True:
         break
     else:
         print("Opção Invalida")
+    print(15 * "-=-")
