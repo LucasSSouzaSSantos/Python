@@ -1,6 +1,6 @@
 import sqlite3
 from sqlite3 import Error
-
+from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuPrincipal
 # conexao
 
 
@@ -21,17 +21,17 @@ opc = 0
 
 while True:
     menuPrincipal()
-    opc = input("Digite uma opção: ")
+    opc = int(input("Digite uma opção: "))
     if opc == 1:
-        print()
+        print("opc 1")
     elif opc == 2:
-        print()
+        print("opc 2")
     elif opc == 3:
-        print()
+        print("opc 3")
     elif opc == 4:
-        print()
+        print("opc 4")
     elif opc == 5:
-        print()
+        print("opc 5")
     elif opc == 6:
         print("Programa finalizado!")
         break
