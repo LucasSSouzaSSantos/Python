@@ -74,10 +74,22 @@ def menuConsultar():
         if vcont >= vlim:
             vcont = 0
     print("Fim da lista")
+    abrirConexao().close()
 
 
 def menuConsultarNomes():
-    print()
+    vnome = input("Digite o nome: ")
+    vsql = "SELECT * FROM tb_contatos WHERE t_NomeContato LIKE '%"+vnome+"%'"
+    res = consultar(abrirConexao(), vsql)
+    vlim = 10
+    vcont = 0
+    for r in res:
+        print(f"ID: {r[0]:<3} Nome: {r[1]:<30} Telefone: {r[2]:<14} E-mail: {r[3]:<30}")
+        vcont += 1
+        if vcont >= vlim:
+            vcont = 0
+    print("Fim da lista")
+    abrirConexao().close()
 
 
 def menuDeletar():
