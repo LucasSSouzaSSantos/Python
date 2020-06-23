@@ -1,5 +1,5 @@
 from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuPrincipal, menuAtualizar, menuInserir
-from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuConsultarId, menuConsultarNomes, menuDeletar
+from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuConsultar, menuConsultarNomes, menuDeletar
 
 
 while True:
@@ -12,7 +12,7 @@ while True:
     elif opc == 3:
         menuAtualizar()
     elif opc == 4:
-        menuConsultarId()
+        menuConsultar()
     elif opc == 5:
         menuConsultarNomes()
     elif opc == 6:
