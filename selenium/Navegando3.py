@@ -9,6 +9,14 @@ vamos tentar um nova abordagem. As classes de suporte do webDriver incluem uma c
 que fornece métodos úteis para interagir com estes(select):
 
 """
+#################################################################################################
+# Criado um objeto Select e passando um método como parâmetro
+sel = Select(driver.find_element_by_name('carros'))
+sele1 = sel.select_by_index(0)
+# sele2 = sel.select_by_visible_text("volvo")
+# sele3 = sel.select_by_value("volvo")
+print(sele1)
+# print(sele2)
+# print(sele3)
 
-time.sleep(3)
 driver.close()
