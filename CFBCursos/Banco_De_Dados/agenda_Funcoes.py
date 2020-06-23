@@ -14,10 +14,6 @@ def abrirConexao():
     return con
 
 
-def fecharConexao(conexao):
-    conexao.close()
-
-
 def menuPrincipal():
     print("1 - Inserir Novo Registro ")
     print("2 - Deletar Registro ")
@@ -59,11 +55,15 @@ def menuConsultarNomes():
 
 
 def menuDeletar():
-    vid = input("Digite o ID do registro a ser deletado: ")
-    vsql = "DELETE tb_contatos WHERE"
+    abrirConexao()
+    vid = int(input("Digite o ID do registro a ser deletado: "))
+    vsql = "DELETE tb_contatos WHERE n_IdContatos=" + vid
+    query(abrirConexao(), vsql)
+    abrirConexao().close()
 
 
 def menuInserir():
+    abrirConexao()
     vnome = input("Digite o nome: ")
     vtelefone = input("Digite o telefone: ")
     vemail = input("Digite o email: ")
