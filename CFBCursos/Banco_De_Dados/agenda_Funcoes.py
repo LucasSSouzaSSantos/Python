@@ -14,6 +14,9 @@ def ConexaoBanco():
     return con
 
 
+def fecharConexao(conexao):
+    conexao.close()
+
 
 def menuPrincipal():
     print("1 - Inserir Novo Registro ")
@@ -22,6 +25,25 @@ def menuPrincipal():
     print("4 - Consultar Registro por ID ")
     print("5 - Consultar Resgistro por Nome ")
     print("6 - Sair")
+
+
+def query(conexao, sql):
+    try:
+        c = conexao.cursor()
+        conexao.execute(sql)
+        conexao.commit()
+    except Error as ex:
+        print(ex)
+    else:
+        print("OK")
+        # conexao.close()
+
+
+def consultar(conexao, sql):
+    c = conexao.cursor()
+    conexao.execute(sql)
+    res = c.fetchall
+    return res
 
 
 def menuAtualizar():
@@ -40,5 +62,15 @@ def menuDeletar():
     print()
 
 
+vcon = ConexaoBanco()
+
+
 def menuInserir():
-    print()
+    vnome = input("Digite o nome: ")
+    vtelefone = input("Digite o telefone: ")
+    vemail = input("Digite o email: ")
+    vsql = "INSERT INTO tb_contatos (t_NomeContato, t_TelefoneContato, t_EmailContato)" \
+           " VALUES ('"+vnome+"','"+vtelefone+"','"+vemail+"')"
+    query(vcon, vsql)
+    fecharConexao(vcon)
+
