@@ -1,4 +1,4 @@
-from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuPrincipal, menuAtualizar, menuInserir, fecharConexao
+from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuPrincipal, menuAtualizar, menuInserir
 from CFBCursos.Banco_De_Dados.agenda_Funcoes import menuConsultarId, menuConsultarNomes, menuDeletar
 
 
