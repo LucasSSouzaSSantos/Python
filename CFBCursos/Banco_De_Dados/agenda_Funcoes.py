@@ -16,7 +16,7 @@ def menuPrincipal():
     print("1 - Inserir Novo Registro ")
     print("2 - Deletar Registro ")
     print("3 - Atualizar Registro ")
-    print("4 - Consultar Registro por ID ")
+    print("4 - Consultar Registro")
     print("5 - Consultar Resgistro por Nome ")
     print("6 - Sair")
 
@@ -63,8 +63,17 @@ def menuAtualizar():
     query(vcon, vsql)
 
 
-def menuConsultarId():
-    print()
+def menuConsultar():
+    vsql = "SELECT * FROM tb_contatos"
+    res = consultar(abrirConexao(), vsql)
+    vlim = 10
+    vcont = 0
+    for r in res:
+        print(f"ID: {r[0]:<3} Nome: {r[1]:<30} Telefone: {r[2]:<14} E-mail: {r[3]:<30}")
+        vcont += 1
+        if vcont >= vlim:
+            vcont = 0
+    print("Fim da lista")
 
 
 def menuConsultarNomes():
