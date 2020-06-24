@@ -3,8 +3,7 @@ from sqlite3 import Error
 
 
 def abrirConexao():
-    caminho = "//home//lucas//Documentos//GitHub//Python" \
-              "//CFBCursos//Tkinter//agenda.db"
+    caminho = "//home//lucas//Documentos//GitHub//Python//CFBCursos//Tkinter//agenda"
     con = None
     try:
         con = sqlite3.connect(caminho)
@@ -59,7 +58,8 @@ def menuAtualizar():
     if len(vemail) == 0:
         vemail = remail
 
-    vsql = "UPDATE tb_contatos SET t_NOMECONTATO = '"+vnome+"', t_TELEFONECONTATO = '"+vtelefone+"', t_EMAILCONTATO = '"+vemail+"' WHERE n_IDCONTATO = " + vid
+    vsql = "UPDATE tb_contatos SET t_NOMECONTATO = '"+vnome+"', t_TELEFONECONTATO = '"+vtelefone+"'," \
+           " t_EMAILCONTATO = '"+vemail+"' WHERE n_IDCONTATO = " + vid
     query(vcon, vsql)
 
 
@@ -104,8 +104,8 @@ def menuInserir():
     vnome = input("Digite o nome: ")
     vtelefone = input("Digite o telefone: ")
     vemail = input("Digite o email: ")
-    vsql = "INSERT INTO tb_contatos (t_NOMECONTATO, t_TELEFONECONTATO, t_EMAILCONTATO)" \
-           " VALUES ('"+vnome+"','"+vtelefone+"','"+vemail+"')"
+    vobs = input("Observação: ")
+    vsql = "INSERT INTO tb_contatos (t_NOMECONTATO, t_TELEFONECONTATO, t_EMAILCONTATO, t_OBS)" \
+           " VALUES ('"+vnome+"','"+vtelefone+"','"+vemail+"', '"+vobs+"')"
     query(abrirConexao(), vsql)
-    consultar(abrirConexao(), "select * from tb_contatos where n_IDCONTATO = 1")
     abrirConexao().close()
