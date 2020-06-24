@@ -53,7 +53,7 @@ txt4.place(x=10, y=160, width=100, height=20)
 tb_obs = Text(app, background="#fff", foreground="#000")
 tb_obs.place(x=10, y=185, width=150, height=50)
 
-btn1 = Button(app, text="Imprimir", command=gravarDados)
+btn1 = Button(app, text="Gravar", command=gravarDados)
 btn1.place(x=10, y=240, width=100, height=20)
 
 app.mainloop()
