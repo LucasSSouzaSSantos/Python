@@ -57,7 +57,3 @@ btn1 = Button(app, text="Gravar", command=gravarDados)
 btn1.place(x=10, y=240, width=100, height=20)
 
 app.mainloop()
-
-
-
-
