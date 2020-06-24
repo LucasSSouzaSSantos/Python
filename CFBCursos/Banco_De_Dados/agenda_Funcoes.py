@@ -3,7 +3,8 @@ from sqlite3 import Error
 
 
 def abrirConexao():
-    caminho = "//home//lucas//Documentos//GitHub//Python//CFBCursos//Banco_De_Dados//Agenda.db"
+    caminho = "//home//lucas//Documentos//GitHub//Python" \
+              "//CFBCursos//Banco_De_Dados//Agenda.db"
     con = None
     try:
         con = sqlite3.connect(caminho)
