@@ -1,31 +1,15 @@
 import pandas as pd
 from pandas_datareader import data as web
-import plotly.graph_objects as go
+from pandas.util.testing import assert_frame_equal
 
 # criando um DataFrame vazio
 df = pd.DataFrame()
 
 # escolher a ação
-acao = 'ITUB3.SA'
+acao1 = 'PETR4.SA'
+acao2 = 'Nasdaq'
 
 # importar dados par o DataFrame
-df = web.DataReader(acao, data_source='yahoo', start='01-01-2000')
+df = web.DataReader(acao1, data_source='yahoo', start='01-01-2000')
 
 print(df.head())
-
-trace1 = {
-    'x': df.index,
-    'open': df.Open,
-    'close': df.Close,
-    'high': df.High,
-    'low': df.Low,
-    'type': 'candlestick',
-    'name': acao,
-    'showlegend': False
-}
-
-data = [trace1]
-layout = go.Layout()
-
-fig = go.Figure(data=data, layout=layout)
-fig.show()
