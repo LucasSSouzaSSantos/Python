@@ -1,7 +1,6 @@
 from tkinter import *
 import os
-from CFBCursos.Tkinter.banco import dml, dql
-
+from CFBCursos.Tkinter.banco import dml
 c = os.path.dirname(__file__)
 nomeArquivo = c+"\\nomes.txt"
 
