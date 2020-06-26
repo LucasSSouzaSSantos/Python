@@ -1,6 +1,5 @@
 import pandas as pd
 from pandas_datareader import data as web
-from pandas.util.testing import assert_frame_equal
 
 # criando um DataFrame vazio
 df = pd.DataFrame()
