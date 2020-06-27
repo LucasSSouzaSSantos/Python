@@ -41,9 +41,17 @@ as chaves do dicionário serão usadas como cabeçalhos
 de coluna e os valores em cada lista como linhas da 
 DataFrame.
                                                         
-A DataFrameé uma estrutura de dados bidimensional que 
+A DataFrameé é uma estrutura de dados bidimensional que 
 pode armazenar dados de diferentes tipos (incluindo 
 caracteres, números inteiros, valores de ponto flutuan
 te, dados categóricos e mais) em colunas. É semelhante
 a uma planilha, uma tabela SQL ou a data.frameem R.
+
+Cada coluna em DataFrame é uma Serie
 """
+
+df["situação"] = ["aprovado", "reprovado", "aprovado"]
+
+print(f'Idade Máxima: {df["Age"].max()}')
+print('Estatísticas básicas')
+print(df.describe())
