@@ -9,6 +9,6 @@ acao1 = 'PETR4.SA'
 acao2 = 'Nasdaq'
 
 # importar dados par o DataFrame
-df = web.DataReader(acao1, data_source='yahoo', start='01-01-2000')
+dm = web.DataReader(acao1, data_source='yahoo', start='01-01-2000')
 
-print(df.head())
+print(dm.head())
