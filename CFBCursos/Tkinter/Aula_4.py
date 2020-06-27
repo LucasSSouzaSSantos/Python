@@ -49,7 +49,7 @@ tb_email.place(x=10, y=135, width=100, height=20)
 txt4 = Label(app, text="Fale Conosco", background="#dde", foreground="#000", anchor=W)
 txt4.place(x=10, y=160, width=100, height=20)
 
-tb_obs = Text(app, background="#fff", foreground="#000")
+tb_obs = Text(app, background="#00BFFF", foreground="#000")
 tb_obs.place(x=10, y=185, width=150, height=50)
 
 btn1 = Button(app, text="Gravar", command=gravarDados)
