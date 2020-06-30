@@ -1,7 +1,7 @@
 # Fazendo um requisição
 import requests
 
-url = 'https://requests.readthedocs.io/pt_BR/latest/user/quickstart.html' 
+url = '' 
 requisicao_get = requests.get(url)
 print(f"Requisição GET: {requisicao_get}")
 
@@ -21,3 +21,9 @@ print(f"Requisição PUT: {requisicao_put}")
 
 requisicao_delete = requests.delete(url)
 print(f"Requisição DELETE: {requisicao_delete}")
+
+requisicao_head = requests.head(url)
+print(f"Requisição HEAD: {requisicao_head}")
+
+requisicao_options = requests.options(url)
+print(f"Requisição OPTIONS: {requisicao_options}")
