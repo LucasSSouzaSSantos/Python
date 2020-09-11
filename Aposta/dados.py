@@ -15,7 +15,7 @@ my_app_key = ""
 # trading = betfairlightweight.APIClient(username=my_username, password=my_password, app_key=my_app_key,
 #                                       certs=certs_path)
 
-payload = 'username=lucas210souza@gmail.com&password='
+payload = 'username=lucas210souza@gmail.com&password=sjALf4-Xz@MS3qU'
 headers = {'X-Application': 'LucasTest', 'Content-Type': 'application/x-www-form-urlencoded'}
 
 endpoint = "https://api.betfair.com/exchange/betting/rest/v1.0/"

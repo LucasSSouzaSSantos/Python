@@ -1,0 +1,194 @@
+1596639135663	geckodriver	INFO	Listening on 127.0.0.1:40301
+1596639135712	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKMiBlA"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596639153161	Marionette	INFO	Listening on port 34913
+1596639153209	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596639172691	Marionette	INFO	Stopped listening on port 34913
+JavaScript error: , line 0: uncaught exception: undefined
+1596640555960	geckodriver	INFO	Listening on 127.0.0.1:57211
+1596640555979	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile12E9mv"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596640569156	Marionette	INFO	Listening on port 34513
+1596640569438	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596640688058	Marionette	INFO	Stopped listening on port 34513
+1596640692513	geckodriver	INFO	Listening on 127.0.0.1:56201
+1596640692533	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerC2Wj0"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596640707185	Marionette	INFO	Listening on port 35937
+1596640707230	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+
+(firefox:28547): GLib-GObject-WARNING **: 12:19:10.096: ../../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f0b321b96a0' of type 'MaiAtkType139'
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596640896046	Marionette	INFO	Stopped listening on port 35937
+1596640898447	geckodriver	INFO	Listening on 127.0.0.1:54799
+1596640898465	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileD8YAZo"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596640912061	Marionette	INFO	Listening on port 39447
+1596640912122	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596640935681	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1596640938849	Marionette	INFO	Stopped listening on port 39447
+1596641141547	geckodriver	INFO	Listening on 127.0.0.1:43075
+1596641142567	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebILDZP"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596641157527	Marionette	INFO	Listening on port 33611
+1596641157603	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596641215489	Marionette	INFO	Stopped listening on port 33611
+1596641577314	geckodriver	INFO	Listening on 127.0.0.1:34243
+1596641578333	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCIuHUA"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596641593148	Marionette	INFO	Listening on port 37109
+1596641593214	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596641708985	geckodriver	INFO	Listening on 127.0.0.1:60901
+1596641709004	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCJvL8g"
+1596641713515	Marionette	INFO	Stopped listening on port 37109
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596641723984	Marionette	INFO	Listening on port 44337
+1596641724160	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596641748718	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1596641752754	Marionette	INFO	Stopped listening on port 44337
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1596642817091	geckodriver	INFO	Listening on 127.0.0.1:54973
+1596642817108	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei0eBZf"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596642832070	Marionette	INFO	Listening on port 43111
+1596642832134	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596642900127	geckodriver	INFO	Listening on 127.0.0.1:51045
+1596642900478	Marionette	INFO	Stopped listening on port 43111
+1596642901154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileojpWnA"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596642917018	Marionette	INFO	Listening on port 45091
+1596642917130	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596649513977	Marionette	INFO	Stopped listening on port 45091
+1596649641212	geckodriver	INFO	Listening on 127.0.0.1:38163
+1596649642183	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegZLtIH"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596649668888	Marionette	INFO	Listening on port 38323
+1596649668968	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596649747448	Marionette	INFO	Stopped listening on port 38323
+1596649821281	geckodriver	INFO	Listening on 127.0.0.1:56597
+1596649822309	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSADrHv"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596649836268	Marionette	INFO	Listening on port 41233
+1596649836349	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596649958722	geckodriver	INFO	Listening on 127.0.0.1:34553
+1596649958745	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEss3ub"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 697: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1596649962812	Marionette	INFO	Stopped listening on port 41233
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596649972897	Marionette	INFO	Listening on port 36299
+1596649972959	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596650065249	geckodriver	INFO	Listening on 127.0.0.1:52221
+1596650066269	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOUyXmq"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 343))
+JavaScript error: resource:///modules/sessionstore/SessionCookies.jsm, line 198: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICookieManager.sessionCookies]
+1596650087975	Marionette	INFO	Stopped listening on port 36299
+1596650094733	geckodriver	INFO	Listening on 127.0.0.1:50665
+1596650094752	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehLe5D3"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596650108354	Marionette	INFO	Listening on port 43373
+1596650108413	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596650535296	Marionette	INFO	Stopped listening on port 43373
+1596650535895	geckodriver	INFO	Listening on 127.0.0.1:55497
+1596650536947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenwrzKG"
+1596650557575	geckodriver	INFO	Listening on 127.0.0.1:48365
+1596650557594	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileurE17W"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596650572323	Marionette	INFO	Listening on port 41997
+1596650572376	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596650595218	Marionette	INFO	Stopped listening on port 41997
+JavaScript error: https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020073001.js?21066964, line 6: NS_ERROR_NOT_INITIALIZED: 
+1596650773513	geckodriver	INFO	Listening on 127.0.0.1:39125
+1596650773530	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerGgsjG"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596650788444	Marionette	INFO	Listening on port 43659
+1596650788510	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1596650864762	Marionette	INFO	Stopped listening on port 43659
+1596651211756	geckodriver	INFO	Listening on 127.0.0.1:40969
+1596651212779	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileazn4IN"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1596651224452	Marionette	INFO	Listening on port 46637
+1596651226504	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596651296300	Marionette	INFO	Stopped listening on port 46637
+1596651314269	geckodriver	INFO	Listening on 127.0.0.1:37461
+1596651314313	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOrm36V"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError: date is undefined
+1596651328652	Marionette	INFO	Listening on port 39063
+1596651328703	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
+1596651467173	Marionette	INFO	Stopped listening on port 39063
