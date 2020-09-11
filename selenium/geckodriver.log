@@ -192,3 +192,5 @@ JavaScript error: resource://gre/modules/TelemetryUtils.jsm, line 159: TypeError
 1596651328703	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://stats.nba.com/scripts/theme.min.js, line 50: TypeError: e is undefined
 1596651467173	Marionette	INFO	Stopped listening on port 39063
+1599838950696	geckodriver	INFO	Listening on 127.0.0.1:50029
+1599838951765	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOKoO6o"
