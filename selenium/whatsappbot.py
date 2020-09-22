@@ -10,7 +10,9 @@ time.sleep(10)
 # Definir contatos e grupos e mensagem a ser enviada
 
 contatos = ['Camila Irmã']
-mensagem = 'Eu sou um robô feito pelo seu irmão, fico enviando mensagem para pessoas chatas... vai trabalhar chataaaaaa....'
+
+mensagem = 'Eu sou um robô feito pelo seu irmão, fico enviando mensagem para pessoas ' \
+           'chatas... vai trabalhar chata'
 
 # Buscar contatos/grupos
 
